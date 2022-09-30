@@ -9,15 +9,19 @@
 </head>
 
 <body>
-    <h1>Welcome to the Revenue Predicting System</h1>
-    <form action="{{url_for('predict')}}" method="post">
-        <input type="text" name="temperature" placeholder="Enter Temperature">
+    <center>
+        <h1>
+            Welcome to the Revenue Predicting System
+        </h1>
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="text" name="temperature" placeholder="Enter Temperature">
 
-        <button type="submit">Predict</button>
+            <button type="submit">Predict</button>
 
-        <h3><b>{{prediction_text}}</b></h3>
+            <h3><b>{{prediction_text}}</b></h3>
 
-    </form>
+        </form>
+    </center>
 </body>
 
 </html>
